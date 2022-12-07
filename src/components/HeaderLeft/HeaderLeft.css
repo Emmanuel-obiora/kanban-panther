@@ -1,0 +1,24 @@
+.header-left{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: transparent;  
+    align-items: center;
+    height: 5.75rem;
+    width: 15.6%;
+    font-size: .99rem;
+    position: relative;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: var(--color-white);
+    padding: 1.5rem 1rem;
+    border-right: .13rem solid var(--color-pry-varient);
+}
+
+.increase-width{
+  width: 23.5%;
+}

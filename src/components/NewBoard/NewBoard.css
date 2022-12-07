@@ -1,0 +1,135 @@
+.created, .overlay-c{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: none;
+}
+
+.overlay-c{
+    background: rgba(49,49,49,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.created-content{
+    background: var(--color-white);
+    width: 38%;
+    padding: 1.5rem;
+    /* display: block; */
+    /* margin: 0 auto; */
+    border-radius: 5px;
+    z-index: 999px;
+    position: fixed;
+    gap: .5rem;
+}
+
+.board-name{
+    margin: 1.5rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.board-name label{
+    color: var(--color-edit);
+    font-weight: 600;
+}
+
+.board-name input{
+    width: 100%;
+    border: 2px solid var(--color-edit-varient);
+    padding: .7rem;
+    border-radius: 8px;
+}
+
+.board-name input:hover{
+    border: 2px solid var(--color-secondary);
+}
+
+.board-columns{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+}
+
+.board-columns label{
+    color: var(--color-edit);
+    font-weight: 600;
+}
+
+.column-list{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    font-size: 18px;
+    align-items: center;
+}
+
+.column-list input{
+    width: 95%;
+    border: 2px solid var(--color-edit-varient);
+    padding: .7rem;
+    border-radius: 8px;
+}
+
+.column-list input:hover{
+    border: 2px solid var(--color-secondary);
+}
+
+.addNewColumn{
+    margin-top: .9rem;
+    width: 100%;
+    background: var(--color-pry-varient);
+    border-radius: 15px;
+    height: 2.3rem;
+    display: flex;
+    padding: .5rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secondary);
+}
+
+.addNewColumn:hover{
+    background: var(--color-secondary-varient);
+    color: var(--color-white);
+}
+
+.new-board{
+    margin: 1.2rem 0;
+    width: 100%;
+    background: var(--color-secondary);
+    border-radius: 15px;
+    height: 2.3rem;
+    display: flex;
+    padding: .5rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.new-board:hover{
+    background: var(--color-secondary-varient);
+}
+
+@media screen and (max-width: 64rem){
+    .created-content{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 37.5rem){
+    .created-content{
+        width: 60%;
+    }
+}
+
+/* ==========classlist to reveal the form=============== */
+.new-board-form{
+    display: block;
+}

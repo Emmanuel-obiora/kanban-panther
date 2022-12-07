@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+  list-style: none;
+  border: 0;
+}
+
+:root{
+  --tw-bg-opacity: 1;
+  --color-pry: rgb(244 247 253 / var(--tw-bg-opacity));
+  --color-pry-varient: #E9EFFA;
+  --color-secondary: #635fc7;
+  --color-secondary-varient: #aba9fd;
+  --color-white: rgb(255, 255, 255);
+  --color-green: rgb(6, 201, 159);
+  --color-blue: rgb(10, 180, 247);
+  --color-red: rgb(226, 36, 36);
+  --color-edit: rgb(131, 125, 125);
+  --color-edit-varient: rgb(216, 212, 212);
+  
+  --transition: all ease 400ms;
+}
+
+
+body {
+    background: var(--color-pry);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: .94rem;
+    max-height: 100vh;
+    overflow: hidden;
+    transition: var(--transition);
+    /* overflow-y: initial; */
+  }
+  
+a{
+  color: var(--color-accent1);
+}
+
+a:hover{
+  color: var(--color-txt);
+}

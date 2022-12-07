@@ -1,0 +1,129 @@
+.main-nav{
+    position: fixed;
+    background: var(--color-white);
+    top: 13.3%;
+    bottom: 0;
+    right: 76.5%;
+    left: 0;
+    color: var(--color-edit);
+    border-right: 2px solid var(--color-pry-varient);
+    visibility: hidden;
+}
+
+.main-nav > h5{
+    padding: 1.5rem;
+}
+
+.createBtn{
+    display: flex;
+    gap: .5rem;
+    width: 90%;
+    margin-top: .4rem;
+    background: transparent;
+    color: var(--color-secondary);
+    padding: 1rem;
+    border-radius: 0 20px 20px 0;
+    align-items: center;
+    cursor: pointer;
+}
+
+.createBtn:hover{
+    background: var(--color-pry-varient);
+}
+
+.only{
+    font-size: 23px;
+    border-radius: 8.5px;
+}
+.create-new{
+    font-size: 17px;
+    background: transparent;
+    color: var(--color-secondary);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hide-side{
+    position: fixed;
+    top: 90%;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: 21%;
+    padding: 1rem;
+    border-radius: 0 20px 20px 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.hide-side:hover{
+    color: var(--color-secondary);
+    background: var(--color-pry-varient);
+}
+
+.close-nav{
+    visibility: visible;
+}
+
+/* ===============STYLING NEW BOARD CREATED===================== */
+.board-list{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    gap: .3rem;
+}
+
+.board-list > li{
+    display: flex;
+    gap: .5rem;
+    width: 90%;
+    background: transparent;
+    color: var(--color-edit);
+    padding: .8rem;
+    border-radius: 0 20px 20px 0;
+    align-items: center;
+    cursor: pointer;
+}
+
+.board-list > li:hover{
+    background: var(--color-pry-varient);
+    color: var(--color-secondary);
+}
+
+.board-list > li:active{
+    background: var(--color-secondary);
+    color: var(--color-white);
+}
+.list-item{
+    font-size: 23px;
+    border-radius: 8.5px;
+}
+
+.list-btn{
+    font-size: 16px;
+    background: transparent;
+    color: var(--color-edit);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.list-btn:hover{
+    color: var(--color-secondary);
+}
+
+/* ==================STYLING THE TOGGLE SWITCH============== */
+.slide-container{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background: var(--color-pry-varient);
+    width: 18%;
+    padding: .5rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    margin-top: 17.7%;
+    z-index: -1;
+}

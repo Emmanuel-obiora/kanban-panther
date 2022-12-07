@@ -1,0 +1,75 @@
+.scrollers{
+    display: block;
+    width: 100%;
+    margin-left: 0%;
+    padding: 0 .5em 0 4em;
+
+}
+
+.todos-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 275px);
+    column-gap: 1.5rem;
+}
+
+.each-todo{
+    display: flex;
+    flex-direction: column;
+}
+
+.each-todo-heading{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+
+.each-todo-heading>h3{
+    margin-right: .2rem;
+}
+
+.each-todo-content{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.each-todo-content > article{
+    background: var(--color-white);
+    border-radius: 8px;
+    padding: 1rem;
+    /* box-shadow: 10% 10% 5px var(--color-pry-varient); */
+}
+
+.each-todo2{
+    background: var(--color-pry-varient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: .5rem;
+    height: auto;
+    margin-top: 4rem;
+    color: var(--color-edit);
+}
+
+.each-todo2:hover{
+    color: var(--color-secondary);
+}
+
+.light-blue{
+    color: var(--color-blue);
+    margin-right: .5rem;
+}
+.light-purple{
+    color: var(--color-secondary);
+    margin-right: .5rem;
+}
+.light-green{
+    color: var(--color-green);
+    margin-right: .5rem;
+}
+
+/* STYLING CLASSLIST USED IN MINIMIZING AND MAXIMIZING THE BODY SECTION */
+.scroller-open{
+    margin-left: 23.5%;
+}
