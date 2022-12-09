@@ -3,18 +3,10 @@ import './NewBoard.css'
 import {AiOutlineClose} from 'react-icons/ai'
 
 const NewBoard = () => {
-    function closeBoard(){
-        const closeBoard = document.getElementById('createNewBoard');
-
-        closeBoard.classList.remove('new-board-form');
-    }
-
 
   return (
     <div>
-        <div className="created " id="createNewBoard" onClick={closeBoard}>
-            <div className="overlay-c">
-                <div className="created-content">
+                <div className="created-content" id="createNewBoard">
                     <h2>Add New Board</h2>
                     <div className="board-name">
                         <label for="">Board Name</label>
@@ -35,10 +27,8 @@ const NewBoard = () => {
 
                     <button type="button" className='addNewColumn'>+ Add New Column</button>
 
-                    <button onClick={closeBoard} type="button" className='new-board'>Create New Board</button>
+                    <button type="button" className='new-board'>Create New Board</button>
                 </div>
-            </div>
-        </div>
     </div>
   )
 }

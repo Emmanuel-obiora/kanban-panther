@@ -1,0 +1,59 @@
+.delete-board-container{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background: var(--color-white);
+    margin: 10% 33%;
+    align-items: justify;
+    padding: 1.5rem;
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
+    z-index: 6;
+    top: 0;
+}
+
+.delete-board-container h3{
+    color: var(--color-red);
+    margin-bottom: 1.5rem;
+}
+
+.delete-board-container p{
+    margin-bottom: 1.5rem;
+    font-size: 13px;
+}
+
+.delete-board-btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-red);
+    color: var(--color-white);
+    padding: .7rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+.delete-board-btn:hover{
+    background: var(--color-red-varient);
+}
+
+.exit-cancel{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-pry-varient);
+    padding: .7rem;
+    border-radius: 20px;
+    color: var(--color-secondary);
+}
+.exit-cancel:hover{
+    background: var(--color-secondary-varient);
+    color: var(--color-white);
+}
+
+/* =========To open delete board container=========== */
+.open-delete-board{
+    display: flex;
+}

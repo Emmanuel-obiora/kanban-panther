@@ -1,0 +1,91 @@
+.display-task-container{
+    width: 35%;
+    background: var(--color-white);
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    margin: 10% 35%;
+    display: none;
+    flex-direction: column;
+    align-items: justify;
+    z-index: 5;
+    padding: 1.5rem;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.display-task-cont-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display-task-cont-subtask{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.3rem;
+    gap: .6rem;
+}
+
+.display-task-cont-subtask span{
+    color: var(--color-edit);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.subtask-house{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    background: var(--color-pry);
+    padding: 1rem;
+    width: 100%;
+}
+
+.display-task-cont-current{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    gap: .7rem;
+    margin-top: 1.3rem;
+}
+
+.display-task-cont-current span{
+    color: var(--color-edit);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.select-current-stat{
+    position: relative;
+}
+
+.display-task-cont-current select{
+    width: 100%;
+    padding: .9rem;
+    border-radius: 5px;
+    border: 1px solid var(--color-edit-varient);
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.display-task-cont-current select:hover{
+    border: 1px solid var(--color-secondary);
+}
+
+.current-stat-drop-down{
+    position: absolute;
+    font-size: 14px;
+    top: 40%;
+    right: 3%;
+    color: var(--color-secondary);
+    pointer-events: none;
+}
+
+/* to reveal task form on click */
+.show-task-cont{
+    display: flex;
+}

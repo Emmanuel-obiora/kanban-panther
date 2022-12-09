@@ -13,14 +13,23 @@ import NewBoard from '../NewBoard/NewBoard'
 const Navbar = () => {
 
     const [toggled, setToggled] = React.useState(false);
+    
     const handleClick = () => {
         setToggled((s) => !s);
     }
 
+    // function changeMode(){
+    //     const bodyMode = document.getElementById('leftSide');
+
+    //     bodyMode.classList.add('light-bright-night');
+    // }
+
     function openBoard(){
         const newBoard = document.getElementById('createNewBoard');
-
+        const modalClose = document.getElementById('modalC');
+   
         newBoard.classList.add('new-board-form');
+        modalClose.classList.add('open-modal-blocker');
     }
 
     function closeNav(){
@@ -46,7 +55,7 @@ const Navbar = () => {
                         <VscTerminalTmux className='list-item'/>
                         <button className='list-btn' type="button">Perform Launch</button>
                     </li>
-                    <li>
+                    <li active>
                         <VscTerminalTmux className='list-item'/>
                         <button className='list-btn' type="button">Marketing Plan</button>
                     </li>

@@ -3,7 +3,6 @@
     width: 100%;
     margin-left: 0%;
     padding: 0 .5em 0 4em;
-
 }
 
 .todos-container{
@@ -36,7 +35,18 @@
     background: var(--color-white);
     border-radius: 8px;
     padding: 1rem;
+    cursor: pointer;
     /* box-shadow: 10% 10% 5px var(--color-pry-varient); */
+}
+
+.each-todo-content > article:hover{
+    color: var(--color-secondary);
+}
+
+.each-todo-content > article > span{
+    color: var(--color-edit);
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .each-todo2{
@@ -45,11 +55,12 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: .5rem;
     height: auto;
     margin-top: 4rem;
     color: var(--color-edit);
+    cursor: pointer;
 }
 
 .each-todo2:hover{

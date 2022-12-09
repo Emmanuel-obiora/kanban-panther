@@ -85,16 +85,16 @@
     align-items: center;
     cursor: pointer;
 }
-
 .board-list > li:hover{
     background: var(--color-pry-varient);
     color: var(--color-secondary);
 }
-
 .board-list > li:active{
     background: var(--color-secondary);
     color: var(--color-white);
 }
+
+
 .list-item{
     font-size: 23px;
     border-radius: 8.5px;

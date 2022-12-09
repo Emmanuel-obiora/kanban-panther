@@ -1,0 +1,15 @@
+.task-cover{
+    background-color: var(--modal-bg);
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.open-modal-blocker{
+    display: flex;
+}

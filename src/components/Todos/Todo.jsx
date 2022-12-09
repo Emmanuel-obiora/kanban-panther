@@ -36,15 +36,31 @@ function Todo(){
         }
     }
 
+    function openEditForm() {
+        const editForm = document.getElementById('editBoard');
+        const modalClose = document.getElementById('modalC');
+
+        editForm.classList.add('open-edit-board');
+        modalClose.classList.add('open-modal-blocker');
+    }
+
+    function displayTaskCont() {
+        const disTask = document.getElementById('disTask');
+        const modalClose = document.getElementById('modalC');
+
+        disTask.classList.add('show-task-cont');
+        modalClose.classList.add('open-modal-blocker');
+    }
+
     return (
         <div>
             <HeaderRight />
             <div className="scrollers" id="shiftR">
-                {/* <ColoredScrollbars universal autoHeight
+                <ColoredScrollbars universal autoHeight
                     autoHeightMin={100}
                     autoHeightMax={528}
                     style={{zIndex: '1'}}
-                > */}
+                >
                     <div className="todos-container">
                         <article className="each-todo">
                             <div className="each-todo-heading">
@@ -53,16 +69,16 @@ function Todo(){
                                 <span>(</span> <span>4</span> <span>)</span>
                             </div>
                             <div className="each-todo-content">
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
                             </div>
@@ -75,20 +91,20 @@ function Todo(){
                                 <span>(</span> <span>4</span> <span>)</span>
                             </div>
                             <div className="each-todo-content">
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
                             </div>
@@ -101,43 +117,43 @@ function Todo(){
                                 <span>(</span> <span>4</span> <span>)</span>
                             </div>
                             <div className="each-todo-content">
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                <article onClick={displayTaskCont}>
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
                             </div>
                         </article>
 
-                        <article className="each-todo2">
+                        <article className="each-todo2" onClick={openEditForm}>
                             <h1>+ New Column</h1>
                         </article>
 
                     </div>
-                {/* </ColoredScrollbars> */}
+                </ColoredScrollbars>
             </div>
 
         </div>

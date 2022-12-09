@@ -19,9 +19,11 @@
   --color-white: rgb(255, 255, 255);
   --color-green: rgb(6, 201, 159);
   --color-blue: rgb(10, 180, 247);
-  --color-red: rgb(226, 36, 36);
+  --color-red: rgb(214, 9, 9);
+  --color-red-varient: rgb(253, 127, 127);
   --color-edit: rgb(131, 125, 125);
   --color-edit-varient: rgb(216, 212, 212);
+  --modal-bg: rgba(0, 0, 0, .7);
   
   --transition: all ease 400ms;
 }
@@ -36,7 +38,6 @@ body {
     max-height: 100vh;
     overflow: hidden;
     transition: var(--transition);
-    /* overflow-y: initial; */
   }
   
 a{
@@ -46,3 +47,13 @@ a{
 a:hover{
   color: var(--color-txt);
 }
+
+/* .light-bright-night{
+  background: rgba(0 0 0 .7);
+  color: var(--color-white);
+}
+
+.dark-bright-night{
+  background: rgba(0 0 0 1);
+  color: var(--color-white);
+} */

@@ -1,0 +1,114 @@
+.edit-board_form{
+    background: var(--color-white);
+    width: 40%;
+    display: none;
+    flex-direction: column;
+    align-items: justify;
+    margin: 8% 32%;
+    height: auto;
+    border-radius: 10px;
+    padding: 1.2rem;
+    position: absolute;
+    z-index: 6;
+    top: 0;
+}
+
+.edit-board_form h2{
+    margin-top: 1rem;
+    font-size: 17px;
+}
+
+.edit-board-name{
+    margin: 1.5rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.edit-board-name label{
+    font-weight: 600;
+    color: var(--color-edit);
+    font-size: 13px;
+}
+
+.edit-board-name input{
+    border: 1px solid var(--color-edit-varient);
+    border-radius: 6px;
+    padding: .7rem;
+}
+.edit-board-name input:hover{
+    border: 1px solid var(--color-secondary);
+}
+
+.edit-board-columns{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.edit-board-columns label{
+    font-weight: 600;
+    color: var(--color-edit);
+    font-size: 13px;
+}
+
+.column-now{
+    display: flex;
+    gap: 3%;
+    width: 100%;
+    align-items: center;
+    margin-bottom: .3rem;
+}
+
+.column-now input{
+    width: 92%;
+    border-radius: 6px;
+    padding: .7rem;
+    border: 1px solid var(--color-edit-varient);
+}
+.column-now input:hover{
+    border: 1px solid var(--color-secondary);
+}
+
+.close-edit-task{
+    font-size: 1.3rem;
+    color: var(--color-edit);
+}
+.close-edit-task:hover{
+    color: var(--color-red);
+}
+
+.edit-add-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 20px;
+    background: var(--color-pry-varient);
+    padding: .7rem;
+    color: var(--color-secondary);
+    font-size: 16px;
+}
+.edit-add-column:hover{
+    background: var(--color-secondary-varient);
+    color: var(--color-white);
+}
+
+.edit-save{
+    background: var(--color-secondary);
+    color: var(--color-white);
+    padding: .7rem;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.edit-save:hover{
+    background: var(--color-secondary-varient);
+}
+
+
+/* =========style used in revealing the edit board form=============== */
+.open-edit-board{
+    display: flex;
+}

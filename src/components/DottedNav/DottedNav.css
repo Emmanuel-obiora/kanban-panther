@@ -1,0 +1,72 @@
+.toggle{
+    display: block;
+    cursor: pointer;
+    width: max-content;
+    position: relative;
+}
+
+.bars{
+    background: #999;
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    width: 5px;
+    border-radius: 50%;
+}
+.bars::before,.bars::after{
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: absolute;
+    width: 5px;
+    border-radius: 50%;
+}
+.bars::before{
+    top: 9px;
+}
+.bars::after{
+    bottom: 9px;
+}
+
+.drop{
+    position: absolute;
+    top: 10.4%;
+    right: 0;
+    font-size: .85rem;
+    font-weight: 700;
+    background: var(--color-white);
+    padding: 1rem;
+    height: 7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.drop > ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: justify;
+}
+
+.drop > ul > .edit-board{
+    color: var(--color-edit);
+}
+
+.drop > ul > li{
+    color: var(--color-red);
+}
+
+  /* styling the invisible class to close the three doted nav when you click anywhere on the page */
+.movable{
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background: transparent;
+    z-index: 2;
+}

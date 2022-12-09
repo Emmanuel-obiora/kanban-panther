@@ -1,24 +1,16 @@
-.task-cover{
-    background: #000000;
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    align-items: center;
-    width: 100%;
-}
-
 .new-task-container{
     background: var(--color-white);
-    width: 40%;
-    display: flex;
+    width: 35%;
+    display: none;
     flex-direction: column;
     align-items: justify;
-    margin: 0 auto;
+    margin: 5% 35%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: .5rem;
+    position: absolute;
+    z-index: 5;
+    top: 0;
 }
 
 .new-task-container h2{
@@ -31,46 +23,52 @@
 
 .new-task-container small{
     color: var(--color-edit);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
 }
 
 .task-title{
-    margin-top: .5rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .6rem;
     flex-wrap: wrap;
 }
 
 .task-title > input{
     width: 100%;
-    padding: .5rem;
+    padding: .7rem;
     border-radius: 5px;
     border: 1px solid var(--color-edit-varient);
 }
+.task-title > input:hover{
+    border: 1px solid var(--color-secondary);
+}
 
 .task-description{
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .6rem;
 }
 
 .task-description > textarea{
     /* width: 100%; */
-    padding: .5rem;
+    padding: .7rem;
     border-radius: 5px;
     flex-wrap: wrap;
     resize: none;
     border: 1px solid var(--color-edit-varient);
 }
+.task-description > textarea:hover{
+    border: 1px solid var(--color-secondary);
+}
 
 .task-subtask{
-    margin-top: 1rem;
+    margin-top: 1.4rem;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .8rem;
 }
 
 .task-subtask_input{
@@ -84,17 +82,23 @@
     width: 93%;
     border: 1px solid var(--color-edit-varient);
     border-radius: 5px;
-    padding: .5rem;
+    padding: .7rem;
     flex-wrap: wrap;
+}
+.task-subtask_input input:hover{
+    border: 1px solid var(--color-secondary);
 }
 
 .close-task{
     width: 5%;
-    font-size: 15px;
+    font-size: 25px;
+}
+.close-task:hover{
+    color: red;
 }
 
 .new-subtask{
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 
 .new-subtask > button{
@@ -102,14 +106,95 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: .6rem;
-    border-radius: 8px;
+    padding: .9rem;
+    border-radius: 25px;
     cursor: pointer;
+    background: var(--color-pry);
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 16px;
+}
+.new-subtask > button:hover{
+    background: var(--color-secondary-varient);
 }
 
 .task-status{
-    margin-top: .5rem;
+    margin: 1.2rem 0;
     display: flex;
     flex-direction: column;
-    gap: .4rem;
+    gap: .7rem;
+}
+
+.drop-down_container{
+    position: relative;
+}
+
+.list__items{
+    font-size: .8rem;
+    padding: 1em;
+    border: 2px solid var(--color-edit-varient);
+    color: grey;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+}
+
+.list__items::-ms-expand{
+    display: none;
+}
+
+.list__items:focus{
+    outline: none;
+    box-shadow: 0 0 10px -1px var(--color-secondary-varient);
+}
+
+.list__items:hover{
+    border: 2px solid var(--color-secondary);
+}
+
+.new-drop-down{
+    position: absolute;
+    font-size: 16px;
+    top: 27%;
+    right: 3%;
+    color: var(--color-secondary);
+    pointer-events: none;
+}
+
+.create-task > button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: .9rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    background: var(--color-secondary);
+    border-radius: 25px;
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.create-task > button:hover{
+    background: var(--color-secondary-varient);
+}
+
+/* ========TO REVEAL ADDNEWTASK INTERFACE ON THE SCREEN========= */
+.add-new-task{
+    display: flex;
+}
+
+/* =========Adding page responsiveness======== */
+@media screen and (max-width: 64rem){
+    .new-task-container{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 37.5rem){
+    .new-task-container{
+        width: 80%;
+    }
 }
