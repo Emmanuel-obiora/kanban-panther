@@ -1,13 +1,15 @@
 .main-nav{
     position: fixed;
     background: var(--color-white);
-    top: 13.3%;
+    top: 5rem;
     bottom: 0;
-    right: 76.5%;
+    width: 18rem;
     left: 0;
     color: var(--color-edit);
-    border-right: 2px solid var(--color-pry-varient);
+    border-right: 1px solid var(--color-pry-varient);
     visibility: hidden;
+    z-index: 2;
+    font-weight: 700;
 }
 
 .main-nav > h5{
@@ -44,12 +46,12 @@
 }
 
 .hide-side{
-    position: fixed;
-    top: 90%;
+    position: absolute;
+    top: 28rem;
     display: flex;
     align-items: center;
     gap: .5rem;
-    width: 21%;
+    width: 16rem;
     padding: 1rem;
     border-radius: 0 20px 20px 0;
     background: transparent;
@@ -78,8 +80,6 @@
     display: flex;
     gap: .5rem;
     width: 90%;
-    background: transparent;
-    color: var(--color-edit);
     padding: .8rem;
     border-radius: 0 20px 20px 0;
     align-items: center;
@@ -88,10 +88,6 @@
 .board-list > li:hover{
     background: var(--color-pry-varient);
     color: var(--color-secondary);
-}
-.board-list > li:active{
-    background: var(--color-secondary);
-    color: var(--color-white);
 }
 
 
@@ -103,27 +99,59 @@
 .list-btn{
     font-size: 16px;
     background: transparent;
-    color: var(--color-edit);
     font-weight: 600;
     cursor: pointer;
 }
 
-.list-btn:hover{
-    color: var(--color-secondary);
-}
 
 /* ==================STYLING THE TOGGLE SWITCH============== */
 .slide-container{
-    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
     background: var(--color-pry-varient);
-    width: 18%;
+    width: 15rem;
     padding: .5rem;
     margin-left: 1rem;
     border-radius: 10px;
     margin-top: 17.7%;
     z-index: -1;
+    position: absolute;
+    top: 22.25rem;
+}
+
+@media screen and (max-width: 37.5rem){
+    .main-nav{
+        visibility: hidden;
+        position: fixed;
+        background: var(--color-white);
+        width: 50%;
+        margin: 0 25%;
+        color: var(--color-edit);
+        border: 1px solid var(--color-pry-varient);
+        z-index: 5;
+        border-radius: 8px;
+        height: 45vh;
+    }
+
+    .createBtn{
+        gap: 1%;
+    }
+    
+
+    .hide-side{
+        display: none;
+    }
+
+    .slide-container{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 15rem;
+        top: 0;
+    }
+
+    .show-resized-nav{
+        visibility: visible;
+    }
 }

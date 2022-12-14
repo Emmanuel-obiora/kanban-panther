@@ -4,7 +4,7 @@
     display: none;
     flex-direction: column;
     align-items: justify;
-    margin: 8% 32%;
+    margin: 8% 30%;
     height: auto;
     border-radius: 10px;
     padding: 1.2rem;
@@ -35,6 +35,7 @@
     border: 1px solid var(--color-edit-varient);
     border-radius: 6px;
     padding: .7rem;
+    background: transparent;
 }
 .edit-board-name input:hover{
     border: 1px solid var(--color-secondary);
@@ -65,6 +66,7 @@
     border-radius: 6px;
     padding: .7rem;
     border: 1px solid var(--color-edit-varient);
+    background: transparent;
 }
 .column-now input:hover{
     border: 1px solid var(--color-secondary);
@@ -111,4 +113,19 @@
 /* =========style used in revealing the edit board form=============== */
 .open-edit-board{
     display: flex;
+}
+
+/* =========Adding modal responsiveness======== */
+@media screen and (max-width: 64rem){
+    .edit-board_form{
+        width: 50%;
+        margin: 10% 25%;
+    }
+}
+
+@media screen and (max-width: 37.5rem){
+    .edit-board_form{
+        width: 80%;
+        margin: 20% 10%;
+    }
 }

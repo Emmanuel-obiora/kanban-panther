@@ -1,9 +1,9 @@
 .created-content{
     display: none;
     background: var(--color-white);
-    width: 38%;
+    width: 40%;
     padding: 1.5rem;
-    margin: 5% 35%;
+    margin: 5% 30%;
     border-radius: 5px;
     z-index: 5;
     position: fixed;
@@ -27,6 +27,7 @@
     border: 2px solid var(--color-edit-varient);
     padding: .7rem;
     border-radius: 8px;
+    background: transparent;
 }
 
 .board-name input:hover{
@@ -58,6 +59,7 @@
     border: 2px solid var(--color-edit-varient);
     padding: .7rem;
     border-radius: 8px;
+    background: transparent;
 }
 
 .column-list input:hover{
@@ -99,15 +101,18 @@
     background: var(--color-secondary-varient);
 }
 
+/* ====Adding modal responsiveness===== */
 @media screen and (max-width: 64rem){
     .created-content{
-        width: 40%;
+        width: 50%;
+        margin: 10% 25%;
     }
 }
 
 @media screen and (max-width: 37.5rem){
     .created-content{
-        width: 60%;
+        width: 80%;
+        margin: 10% 10%;
     }
 }
 

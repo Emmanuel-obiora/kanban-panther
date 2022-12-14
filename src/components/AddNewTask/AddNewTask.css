@@ -4,13 +4,14 @@
     display: none;
     flex-direction: column;
     align-items: justify;
-    margin: 5% 35%;
+    margin: 5% 32.5%;
     height: auto;
     border-radius: 10px;
     padding: .5rem;
     position: absolute;
     z-index: 5;
     top: 0;
+    color: black;
 }
 
 .new-task-container h2{
@@ -22,7 +23,7 @@
 }
 
 .new-task-container small{
-    color: var(--color-edit);
+    color: var(--color-night);
     font-size: 16px;
     font-weight: 700;
 }
@@ -40,9 +41,14 @@
     padding: .7rem;
     border-radius: 5px;
     border: 1px solid var(--color-edit-varient);
+    background: transparent;
 }
 .task-title > input:hover{
     border: 1px solid var(--color-secondary);
+}
+
+.dark{
+    color: white;
 }
 
 .task-description{
@@ -59,6 +65,7 @@
     flex-wrap: wrap;
     resize: none;
     border: 1px solid var(--color-edit-varient);
+    background: transparent;
 }
 .task-description > textarea:hover{
     border: 1px solid var(--color-secondary);
@@ -84,6 +91,7 @@
     border-radius: 5px;
     padding: .7rem;
     flex-wrap: wrap;
+    background: transparent;
 }
 .task-subtask_input input:hover{
     border: 1px solid var(--color-secondary);
@@ -138,6 +146,7 @@
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
+    background: transparent;
 }
 
 .list__items::-ms-expand{
@@ -186,15 +195,17 @@
     display: flex;
 }
 
-/* =========Adding page responsiveness======== */
+/* =========Adding modal responsiveness======== */
 @media screen and (max-width: 64rem){
     .new-task-container{
-        width: 45%;
+        width: 50%;
+        margin: 5% 25%;
     }
 }
 
 @media screen and (max-width: 37.5rem){
     .new-task-container{
         width: 80%;
+        margin: 5% 10%;
     }
 }

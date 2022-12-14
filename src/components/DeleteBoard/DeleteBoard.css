@@ -3,7 +3,7 @@
     display: none;
     flex-direction: column;
     background: var(--color-white);
-    margin: 10% 33%;
+    margin: 15% 32.5%;
     align-items: justify;
     padding: 1.5rem;
     width: 35%;
@@ -56,4 +56,19 @@
 /* =========To open delete board container=========== */
 .open-delete-board{
     display: flex;
+}
+
+/* =========Adding modal responsiveness======== */
+@media screen and (max-width: 64rem){
+    .delete-board-container{
+        width: 50%;
+        margin: 20% 25%;
+    }
+}
+
+@media screen and (max-width: 37.5rem){
+    .delete-board-container{
+        width: 80%;
+        margin: 40% 10%;
+    }
 }

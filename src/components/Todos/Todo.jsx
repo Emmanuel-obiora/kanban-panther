@@ -29,7 +29,7 @@ function Todo(){
         render() {
             return (
                 <Scrollbars
-                    renderThumbHorizontal={this.renderThumb}
+                    // renderThumbHorizontal={this.renderThumb}
                     renderThumbVertical={this.renderThumb}
                     {...this.props}/>
             );
@@ -58,7 +58,7 @@ function Todo(){
             <div className="scrollers" id="shiftR">
                 <ColoredScrollbars universal autoHeight
                     autoHeightMin={100}
-                    autoHeightMax={528}
+                    autoHeightMax={570}
                     style={{zIndex: '1'}}
                 >
                     <div className="todos-container">
@@ -69,15 +69,15 @@ function Todo(){
                                 <span>(</span> <span>4</span> <span>)</span>
                             </div>
                             <div className="each-todo-content">
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
@@ -148,7 +148,7 @@ function Todo(){
                             </div>
                         </article>
 
-                        <article className="each-todo2" onClick={openEditForm}>
+                        <article className="each-todo2" id="spareCol" onClick={openEditForm}>
                             <h1>+ New Column</h1>
                         </article>
 

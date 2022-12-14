@@ -4,7 +4,7 @@
     border-radius: 8px;
     position: absolute;
     top: 0;
-    margin: 10% 35%;
+    margin: 10% 32.5%;
     display: none;
     flex-direction: column;
     align-items: justify;
@@ -70,6 +70,7 @@
     border: 1px solid var(--color-edit-varient);
     -webkit-appearance: none;
     appearance: none;
+    background: transparent;
 }
 
 .display-task-cont-current select:hover{
@@ -88,4 +89,19 @@
 /* to reveal task form on click */
 .show-task-cont{
     display: flex;
+}
+
+/* =========Adding modal responsiveness======== */
+@media screen and (max-width: 64rem){
+    .display-task-container{
+        width: 50%;
+        margin: 15% 25%;
+    }
+}
+
+@media screen and (max-width: 37.5rem){
+    .display-task-container{
+        width: 80%;
+        margin: 25% 10%;
+    }
 }

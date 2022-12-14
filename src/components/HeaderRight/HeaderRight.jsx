@@ -1,6 +1,7 @@
 import React from 'react'
 import './HeaderRight.css'
 import DottedNav from '../DottedNav/DottedNav'
+import { BsPlusLg } from 'react-icons/bs'
 
 
 const HeaderRight = () => {
@@ -21,6 +22,9 @@ const HeaderRight = () => {
                     <h2>Platform Launch</h2>
                     <div className="clickables">
                         <button type='button' onClick={addNewTask}>+AddNewTask</button>
+                        <div className='small-add-new' onClick={addNewTask}>
+                            <BsPlusLg />
+                        </div>
                         <DottedNav />
                     </div>
                 </div>

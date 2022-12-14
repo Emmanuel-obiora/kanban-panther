@@ -6,6 +6,42 @@ import {Component} from 'react';
 import { SlArrowDown } from 'react-icons/sl'
 
 const AddNewTask = () => {
+  const [subTks, setSubTks] = React.useState([])
+  const [subT, setSubT] = React.useState("")
+  // const [newTitle, setNewTitle] = useState("");
+  // const [newDescription, setNewDescription] = useState("");
+  // const [newSub, setNewSub] = useState("");
+  // const [newStatus, setNewStatus] = useState("Todo");
+
+  React.useEffect(() => {
+    const temp = localStorage.getItem("subTks")
+    const loadedTodos = JSON.parse(temp)
+
+    if(loadedTodos){
+        setSubTks(loadedTodos);
+    }
+  },[])
+
+  React.useEffect(() => {
+      const temp = JSON.stringify(subTks)
+      localStorage.setItem("subTks", temp)
+  },[subTks])
+
+
+  function addSubTask(){
+    const newSubTask = {
+        id: new Date().getTime(),
+        text: subT,
+    }
+    setSubTks([...subT].concat(newSubTask))
+    setSubT("")
+}
+
+function deleteSubT(id){ 
+  const updatedSubTks = [...subTks].filter((subT) => subT.id !==id)
+  setSubTks(updatedSubTks)
+}
+
   class ColoredScrollbars extends Component {
 
     constructor(props, ...rest) {
@@ -27,19 +63,20 @@ const AddNewTask = () => {
     render() {
         return (
             <Scrollbars
-                renderThumbHorizontal={this.renderThumb}
                 renderThumbVertical={this.renderThumb}
+                // renderThumbHorizontal={this.renderThumb}
                 {...this.props}/>
         );
     }
 }
 
+
   return (
     <div>
         <div className="new-task-container" id="taskCover">
           <ColoredScrollbars universal autoHeight
-                    autoHeightMin={100}
-                    autoHeightMax={550}
+                    autoHeightMin={50}
+                    autoHeightMax={490}
                     style={{zIndex: '1'}}
           >
             <h2>Add New Task</h2>
@@ -65,10 +102,19 @@ const AddNewTask = () => {
                 <input type="text" placeholder=' e.g Drink coffee & smile' />
                 <AiOutlineClose className="close-task" />
               </div>
+
+              {subTks.map((subT) => <div key={subT.id}>
+                <div className="task-subtask_input">
+                  <input type="text" placeholder='' value={subT.text}/>
+                  <AiOutlineClose className="close-task" onClick = {() => deleteSubT (subT.id)} />
+                </div>
+              </div>)}
+
             </div>
-            <div  className='new-subtask pad-all'>
-              <button type="button">+AddNewSubtask</button>
+            <div className='new-subtask pad-all'>
+              <button type="button" onClick={() => addSubTask (subT.id)}>+AddNewSubtask</button>
             </div>
+
             <div className="task-status pad-all">
               <small>Status</small>
               <div className="drop-down_container">

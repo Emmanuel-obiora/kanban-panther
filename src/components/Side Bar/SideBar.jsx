@@ -1,6 +1,7 @@
 import React from 'react'
 import './SideBar.css'
 import {AiFillEye} from 'react-icons/ai'
+import { SlArrowDown } from 'react-icons/sl'
 
 const SideBar = () => {
 
@@ -16,9 +17,18 @@ const SideBar = () => {
     scroller.classList.add("scroller-open");
 }
 
+function showResizedNav(){
+  const showing = document.getElementById('mainNav');
+  const modalOpen = document.getElementById('modalC');
+
+  showing.classList.add('show-resized-nav');
+  modalOpen.classList.add('open-modal-blocker');
+}
+
   return (
     <div>
         <span className="side" onClick={openNav}>< AiFillEye /></span>
+        <SlArrowDown className="side-drop-arrow" onClick={showResizedNav} />
     </div>
   )
 }

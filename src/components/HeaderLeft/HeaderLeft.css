@@ -1,24 +1,64 @@
 .header-left{
-    display: grid;
-    grid-template-columns: 1fr;
-    background: transparent;  
+    display: flex; 
     align-items: center;
     height: 5.75rem;
-    width: 15.6%;
     font-size: .99rem;
     position: relative;
+    width: 12rem;
+    font-size: 27px;
+    background: var(--color-white);
+    border-right: 1px solid var(--color-pry-varient);
 }
 
 .logo{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    background: var(--color-white);
-    padding: 1.5rem 1rem;
-    border-right: .13rem solid var(--color-pry-varient);
+    margin: 0 4px 0 10px;
+    transform: rotate(90deg);
+    padding: 0 .5rem;
 }
 
+.logo > span{
+  display: inline-block;
+  height: 5.5px;
+  width: 1.6rem;
+  background: rgba(99, 95, 199, .8);
+  position: relative;
+}
+
+.logo > span::before, .logo>span::after {
+  display: inline-block;
+  height: 6px;
+  width: 1.6rem;
+  position: absolute;
+  content: "";
+}
+
+.logo>span::before{
+  top: .7rem;
+  background: rgba(99, 95, 199, 1);
+}
+.logo>span::after{
+  bottom: .7rem;
+  background: rgba(99, 95, 199, .5);
+}
+
+/* ======changing the width size on side bar click===== */
 .increase-width{
-  width: 23.5%;
+  width: 18rem;
+}
+
+@media screen and (max-width: 37.5rem){
+  .logo{
+    height: 90%;
+    width: 3rem;
+    overflow: hidden;
+    padding: 1.5rem 1.96rem;
+    margin-top: -12px;
+  }
+
+  .logo>img{
+    width: 200px;
+  }
 }

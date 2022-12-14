@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 2.5rem;
-    width: 4%;
+    width: 3rem;
     top: 85%;
     left: 0;
     font-size: 21px;
@@ -15,4 +15,26 @@
 
 .side:hover{
     background: var(--color-secondary-varient);
+}
+
+.side-drop-arrow{
+    display: none;
+    position: fixed;
+    top: 5.5%;
+    color: var(--color-secondary);
+    width: 18px;
+    height: 18px;
+    left: 15rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 37.5rem){
+    .side{
+        display: none;
+    }
+
+    .side-drop-arrow{
+        display: block;
+    }
 }
