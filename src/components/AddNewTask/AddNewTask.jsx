@@ -8,10 +8,6 @@ import { SlArrowDown } from 'react-icons/sl'
 const AddNewTask = () => {
   const [subTks, setSubTks] = React.useState([])
   const [subT, setSubT] = React.useState("")
-  // const [newTitle, setNewTitle] = useState("");
-  // const [newDescription, setNewDescription] = useState("");
-  // const [newSub, setNewSub] = useState("");
-  // const [newStatus, setNewStatus] = useState("Todo");
 
   React.useEffect(() => {
     const temp = localStorage.getItem("subTks")

@@ -10,8 +10,8 @@
     align-items: justify;
     z-index: 5;
     padding: 1.5rem;
-    height: 60vh;
-    overflow: hidden;
+    height: auto;
+    /* overflow: hidden; */
 }
 
 .display-task-cont-head{
@@ -61,6 +61,7 @@
 
 .select-current-stat{
     position: relative;
+    height: 5rem;
 }
 
 .display-task-cont-current select{
@@ -71,6 +72,7 @@
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
+    position: absolute;
 }
 
 .display-task-cont-current select:hover{
@@ -80,7 +82,7 @@
 .current-stat-drop-down{
     position: absolute;
     font-size: 14px;
-    top: 40%;
+    top: 20%;
     right: 3%;
     color: var(--color-secondary);
     pointer-events: none;

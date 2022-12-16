@@ -129,10 +129,10 @@
         width: 50%;
         margin: 0 25%;
         color: var(--color-edit);
-        border: 1px solid var(--color-pry-varient);
+        border: 1px solid var(--color-night);
         z-index: 5;
         border-radius: 8px;
-        height: 45vh;
+        height: 55vh;
     }
 
     .createBtn{

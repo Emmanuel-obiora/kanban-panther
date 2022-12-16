@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {BsFillCircleFill} from 'react-icons/bs'
 import './Todo.css'
 import { Scrollbars } from 'react-custom-scrollbars-2';
@@ -58,7 +58,7 @@ function Todo(){
             <div className="scrollers" id="shiftR">
                 <ColoredScrollbars universal autoHeight
                     autoHeightMin={100}
-                    autoHeightMax={570}
+                    autoHeightMax={580}
                     style={{zIndex: '1'}}
                 >
                     <div className="todos-container">
@@ -155,7 +155,6 @@ function Todo(){
                     </div>
                 </ColoredScrollbars>
             </div>
-
         </div>
     );
 }
