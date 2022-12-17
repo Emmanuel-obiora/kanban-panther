@@ -1,12 +1,44 @@
 import React, { useState } from 'react'
 import './NewBoard.css'
 import {AiOutlineClose} from 'react-icons/ai'
-// import { v4 as uuid } from 'uuid';
+import { v4 as uuid } from 'uuid';
 
 const NewBoard = () => {
     const [boardName, setBoardName] = useState("");
     const [boardCol, setBoardCol] = useState("");
     const [boardCol2, setBoardCol2] = useState("");
+    const [newBTks, setNewBTks] = React.useState([])
+    const [newBT, setNewBT] = React.useState("")
+
+        React.useEffect(() => {
+            const temp = localStorage.getItem("newBTks")
+            const loadedTodos = JSON.parse(temp)
+
+            if(loadedTodos){
+                setNewBTks(loadedTodos);
+            }
+        },[])
+
+        React.useEffect(() => {
+            const temp = JSON.stringify(newBTks)
+            localStorage.setItem("newBTks", temp)
+        },[newBTks])
+
+
+        function addNewBSubTask(){
+            const newSubTask = {
+                id: uuid(),
+                text: newBT,
+            }
+            setNewBTks([...newBTks].concat(newSubTask))
+            setNewBT("")
+        }
+
+        function deleteNewBSubT(id){ 
+        const updatedNewBTks = [...newBTks].filter((newBT) => newBT.id !==id)
+        setNewBTks(updatedNewBTks)
+        }
+
 
     const boardSubmit = (e) => {
         e.preventDefault();
@@ -48,7 +80,14 @@ const NewBoard = () => {
                             <AiOutlineClose className="newboard-close" />
                         </ div>
 
-                        <button type="button" className='addNewColumn'>+ Add New Column</button>
+                        {newBTks.map((newBT) => <div key={newBT.id}>
+                            <div className="column-list">
+                                <input type="text" name="" placeholder='' />
+                                <AiOutlineClose className="newboard-close" onClick = {() => deleteNewBSubT (newBT.id)}/>
+                            </ div>
+                        </div>)}
+
+                        <button type="button" className='addNewColumn' onClick={() => addNewBSubTask (newBT.id)}>+ Add New Column</button>
                     </div>
 
                     <button type="submit" className='new-board'>Create New Board</button>

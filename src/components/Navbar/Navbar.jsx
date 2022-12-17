@@ -13,6 +13,21 @@ import NewBoard from '../NewBoard/NewBoard'
 const Navbar = () => {
 
     const [toggled, setToggled] = React.useState(false);
+
+    React.useEffect(() => {
+        const temp = localStorage.getItem("toggled")
+        const switchClicked = JSON.parse(temp)
+
+        if(switchClicked){
+            setToggled(switchClicked);
+        }
+    },[])
+
+    React.useEffect(() => {
+        const temp = JSON.stringify(toggled)
+        localStorage.setItem("toggled", temp)
+    },[toggled])
+    
     
     const handleClick = () => {
         setToggled((s) => !s);
@@ -55,7 +70,6 @@ const Navbar = () => {
             createNewBoard.classList.add('light-bright-night');
             spareCol.classList.add('light-bright-night');
         }
-        
 
     }
 

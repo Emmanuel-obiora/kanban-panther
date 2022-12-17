@@ -29,7 +29,7 @@ const AddNewTask = () => {
         id: new Date().getTime(),
         text: subT,
     }
-    setSubTks([...subT].concat(newSubTask))
+    setSubTks([...subTks].concat(newSubTask))
     setSubT("")
 }
 
@@ -101,7 +101,7 @@ function deleteSubT(id){
 
               {subTks.map((subT) => <div key={subT.id}>
                 <div className="task-subtask_input">
-                  <input type="text" placeholder='' value={subT.text}/>
+                  <input type="text" placeholder='' />
                   <AiOutlineClose className="close-task" onClick = {() => deleteSubT (subT.id)} />
                 </div>
               </div>)}

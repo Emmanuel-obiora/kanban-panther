@@ -91,6 +91,7 @@
     padding: .7rem;
     color: var(--color-secondary);
     font-size: 16px;
+    cursor: pointer;
 }
 .edit-add-column:hover{
     background: var(--color-secondary-varient);
