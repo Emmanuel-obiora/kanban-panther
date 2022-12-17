@@ -1,13 +1,13 @@
 .header-left{
     display: flex; 
     align-items: center;
-    height: 5.75rem;
     font-size: .99rem;
     position: relative;
     width: 12rem;
     font-size: 27px;
     background: var(--color-white);
     border-right: 1px solid var(--color-pry-varient);
+    height: 6.4rem;
 }
 
 .logo{
@@ -16,7 +16,7 @@
     align-items: center;
     margin: 0 4px 0 10px;
     transform: rotate(90deg);
-    padding: 0 .5rem;
+    padding: .5rem;
 }
 
 .logo > span{

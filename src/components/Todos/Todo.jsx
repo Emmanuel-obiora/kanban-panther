@@ -91,19 +91,19 @@ function Todo(){
                                 <span>(</span> <span>4</span> <span>)</span>
                             </div>
                             <div className="each-todo-content">
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
@@ -117,31 +117,31 @@ function Todo(){
                                 <span>(</span> <span>4</span> <span>)</span>
                             </div>
                             <div className="each-todo-content">
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>
-                                <article onClick={displayTaskCont}>
+                                <article onClick={displayTaskCont} className="task-porfolio">
                                     <h4>Lorem ipsum dolor sit amet.</h4>
                                     <span>1 of <span>3</span> task</span>
                                 </article>

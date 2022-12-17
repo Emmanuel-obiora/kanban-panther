@@ -72,3 +72,14 @@
         margin: 40% 10%;
     }
 }
+
+/* =====styling the modal box in dark mode===== */
+.light-bright-night .exit-cancel{
+    background: var(--color-white);
+    color: var(--color-secondary);
+}
+
+.light-bright-night .exit-cancel:hover{
+    background: var(--color-white);
+    color: var(--color-secondary);
+}

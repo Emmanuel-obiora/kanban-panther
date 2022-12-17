@@ -33,14 +33,14 @@
     row-gap: 1rem;
 }
 
-.each-todo-content > article{
+.task-porfolio{
     background: var(--color-white);
     border-radius: 8px;
     padding: 1rem;
     cursor: pointer;
 }
 
-.each-todo-content > article:hover{
+.task-porfolio:hover{
     color: var(--color-secondary);
 }
 
@@ -87,3 +87,12 @@
     margin-left: 18rem;
 }
 
+/* ====switching the todo items from light mode to dark mode======= */
+.dark-bright-night .task-porfolio{
+    background: #2b2c37;
+    color: var(--color-white);
+}
+
+.dark-bright-night .each-todo-content > article > span{
+    color: var(--color-night);
+}

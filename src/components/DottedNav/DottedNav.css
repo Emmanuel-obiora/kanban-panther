@@ -35,7 +35,7 @@
 
 .drop{
     position: absolute;
-    top: 90%;
+    /* top: 90%; */
     right: 0;
     font-size: .85rem;
     font-weight: 700;
@@ -73,4 +73,13 @@
     position: fixed;
     background: transparent;
     z-index: 2;
+}
+
+/* ======styling the drop down dark mode===== */
+.light-bright-night .drop{
+    background: #2b2c37;
+}
+
+.light-bright-night .drop > ul > .edit-board{
+    color: var(--color-white);
 }

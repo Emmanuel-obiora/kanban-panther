@@ -3,7 +3,7 @@
     background: var(--color-white);
     width: 40%;
     padding: 1.5rem;
-    margin: 5% 30%;
+    margin: 5% 35%;
     border-radius: 5px;
     z-index: 5;
     position: fixed;
@@ -101,6 +101,10 @@
     background: var(--color-secondary-varient);
 }
 
+.newboard-close:hover{
+    color: var(--color-red);
+}
+
 /* ====Adding modal responsiveness===== */
 @media screen and (max-width: 64rem){
     .created-content{
@@ -119,4 +123,30 @@
 /* ==========classlist to reveal the form=============== */
 .new-board-form{
     display: block;
+}
+
+/* ========dark mode modal element switching========== */
+.light-bright-night .board-name label{
+    color: var(--color-white);
+}
+
+.light-bright-night .board-name input{
+    color: var(--color-white);
+}
+
+.light-bright-night .board-columns label{
+    color: var(--color-white);
+}
+
+.light-bright-night .column-list input{
+    color: var(--color-white);
+}
+
+.light-bright-night .addNewColumn{
+    background: var(--color-white);
+    color: var(--color-secondary);
+}
+.light-bright-night .addNewColumn:hover{
+    background: var(--color-white);
+    color: var(--color-secondary);
 }

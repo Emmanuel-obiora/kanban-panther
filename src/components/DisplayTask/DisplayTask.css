@@ -72,7 +72,7 @@
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
-    position: absolute;
+    position: relative;
 }
 
 .display-task-cont-current select:hover{
@@ -106,4 +106,27 @@
         width: 80%;
         margin: 25% 10%;
     }
+}
+
+/* =====styling modal box fir dark mode======= */
+.light-bright-night .display-task-cont-subtask span{
+    color: var(--color-white);
+}
+
+.light-bright-night .subtask-house{
+    color: var(--color-white);
+    background: #20212c;
+}
+
+.light-bright-night .display-task-cont-current span{
+    color: var(--color-white);
+}
+
+.light-bright-night .display-task-cont-current select{
+    color: var(--color-white);
+}
+
+.light-bright-night .display-task-cont-current select > option{
+    color: var(--color-white);
+    background: #2b2c37;
 }

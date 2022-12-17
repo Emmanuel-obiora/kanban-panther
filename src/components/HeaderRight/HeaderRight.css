@@ -4,9 +4,9 @@
     background: transparent;  
     font-size: .99rem;
     margin-left: 12rem;
-    margin-top: -6rem;
+    margin-top: -6.4rem;
     position: relative;
-    height: 6rem;
+    height: 6.4rem;
 }
 
 .left-side{
@@ -30,9 +30,9 @@
     background: var(--color-secondary);
     color: var(--color-white);
     font-weight: 600;
-    padding: .8rem;
+    padding: .7rem;
     border-radius: 22px;
-    font-size: 1rem;
+    font-size: .9rem;
     cursor: pointer;
 }
 

@@ -22,6 +22,12 @@
     padding: 0 1rem;
 }
 
+.small{
+    color: var(--color-night);
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .new-task-container small{
     color: var(--color-night);
     font-size: 16px;
@@ -147,6 +153,7 @@
     appearance: none;
     width: 100%;
     background: transparent;
+    gap: 1rem;
 }
 
 .list__items::-ms-expand{
@@ -208,4 +215,40 @@
         width: 80%;
         margin: 5% 10%;
     }
+}
+
+/* =======styling modal dark mode=========== */
+.light-bright-night .small{
+    color: var(--color-white);
+}
+
+.light-bright-night .task-title > input{
+    color: var(--color-white);
+}
+
+.light-bright-night .task-description > textarea{
+    color: var(--color-white);
+}
+
+.light-bright-night .task-subtask_input input{
+    color: var(--color-white);
+}
+
+.light-bright-night .new-subtask > button{
+    background: var(--color-white);
+    color: var(--color-secondary);
+}
+
+.light-bright-night .new-subtask > button:hover{
+    background: var(--color-white);
+    color: var(--color-secondary);
+}
+
+.light-bright-night .list__items{
+    color: var(--color-white);
+}
+
+.light-bright-night .list__items > option{
+    background: #2b2c37;
+    color: var(--color-night);
 }

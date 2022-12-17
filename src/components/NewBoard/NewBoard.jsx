@@ -40,12 +40,12 @@ const NewBoard = () => {
                         <div className="column-list">
                             <input type="text" name="Todo" value={boardCol}
                                 onChange={(e) => setBoardCol(e.target.value)} placeholder='e.g Todo' />
-                            <AiOutlineClose />
+                            <AiOutlineClose className="newboard-close" />
                         </div>
                         <div className="column-list">
                             <input type="text" name="Doing" value={boardCol2}
                                 onChange={(e) => setBoardCol2(e.target.value)} placeholder='e.g Doing' />
-                            <AiOutlineClose />
+                            <AiOutlineClose className="newboard-close" />
                         </ div>
 
                         <button type="button" className='addNewColumn'>+ Add New Column</button>

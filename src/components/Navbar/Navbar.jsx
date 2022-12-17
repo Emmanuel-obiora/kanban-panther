@@ -41,6 +41,7 @@ const Navbar = () => {
             editBoard.classList.remove('light-bright-night');
             createNewBoard.classList.remove('light-bright-night');
             spareCol.classList.remove('light-bright-night');
+
         }else{
             todo.classList.add('dark-bright-night');
             leftSide.classList.add('light-bright-night');

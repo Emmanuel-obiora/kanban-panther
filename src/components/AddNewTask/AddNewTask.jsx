@@ -71,17 +71,17 @@ function deleteSubT(id){
     <div>
         <div className="new-task-container" id="taskCover">
           <ColoredScrollbars universal autoHeight
-                    autoHeightMin={50}
-                    autoHeightMax={490}
+                    autoHeightMin={100}
+                    autoHeightMax={540}
                     style={{zIndex: '1'}}
           >
             <h2>Add New Task</h2>
             <div className="task-title pad-all">
-              <small>Title</small>
+              <small className="small">Title</small>
               <input type="text" placeholder=' e.g Take coffee break'/>
             </div>
             <div className="task-description pad-all">
-              <small>Description</small>
+              <small className="small">Description</small>
               <textarea rows="7" type="text" placeholder=" e.g It's always good to take a break. This 15 minutes will recharge the batteries a little."></textarea>
             </div>
             <div className="task-subtask pad-all">
