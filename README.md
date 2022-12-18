@@ -1,3 +1,64 @@
+
+# Kanban Task Manager
+
+## GENERAL INFORMATION
+
+This is a project outlining a todo app with functions such as add, save, delete, edit dynamically through the use of several pop-ups and page linking. It gives users the opportunity to decide how to structure their todo app with regards to todo components and file listing. Stored todos can be editted and deleted.
+
+## Table of Content
+
+* [General info](#general-information)
+* [Table of Content](#table-of-content)
+* [Introduction](#introduction)
+* [Technologies](#technologies)
+* [Illustration](#illustrations)
+* [Scope of Functionalities](#scope-of-functionalities)
+* [Project Status](#project-status)
+* [Sources](#sources)
+* [Getting Started with Create React App](#getting-started-with-create-react-app)
+* [Launch](#launch)
+* [Room For Improvement](#room-for-improvement)
+
+## Introduction
+
+This documentation contains a well detailed scope of the project inclusive of future prospective in terms of advanced functionalities. In a step by step guide the technologies used in achieving this project, Illustrations on the functionalities and how to use the project will be stated below. This project currently focusses on a todo task manager app which can be used to itemized a list of important activities to be carried with easy access to user and security to data within the time frame of its execution.  
+
+## Technologies
+
+This projects was done with the following technologies.
+
+1. VScode v1.70.1
+2. React JS
+3. CSS
+4. React Hooks
+
+## Illustrations
+
+![Main Page](./src/assets/main.png)
+Image showing the main page of Todo Task Manager App.
+
+## Scope of Functionalities
+
+### Features
+
+* A todo task manager app with unique color to keep the minds of users on the site.
+* Well crafted Interfaces with good communication between users and the system.
+* Easy utilization of functionalities to meet users needs.
+* A responsive websites with several device compactability. Typically Desktop, Tablet and Mobile.
+* Dynamic linking of data to suite users needs.
+
+## Project Status
+
+The project is currently not-completed.
+
+## Sources
+
+This project was inspired by SeamFix NextGen Programe. But became a reality through several sources like Youtube, Google and acquired knowledge. For example;
+
+* [Stack-Overflow](https://stackoverflow.com)
+* [Ania Kubow](https://www.youtube.com/watch?v=2eFr9jvNHH8)
+* [Ganesan C](https://www.c-sharpcorner.com/article/how-to-deploy-react-application-on-github-pages/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +129,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Launch
+
+To run this project on your local machine, simply follow the steps below.
+
+* Install [Vscode](https://code.visualstudio.com/)
+* Go to [GitHub](https://github.com/Emmanuel-obiora/todo-app)
+* Click on CODE and copy the HTTPS link to clone the project.
+* From your VScode terminal clone the project
+* Finally click GO Live to view on browser if live server is installed.
+* Else right click on the index file and click on open with (any browser installed on your pc would show here)
+
+## Room For Improvement
+
+* Making the modal boxes to be fully functional dynamically.
+
+### Author
+
+👤 **Obiora Emmanuel**
+
+* GitHub: [Emmanuel-obiora](https://github.com/Emmanuel-obiora)
+* Twitter: [Miroclesdgenius](https://twitter.com/Miroclesdgenius)
+* LinkedIn: [obiora-emmanuel](https://www.linkedin.com/in/obiora-emmanuel-b4935616a/)
+
+### Show your support
+
+Give a ⭐️ if you like this project!
+
+### 📝 License
+
+This project is [MIT](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository) licensed.
