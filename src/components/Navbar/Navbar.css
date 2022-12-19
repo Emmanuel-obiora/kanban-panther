@@ -163,6 +163,6 @@
 }
 
 .active-clicks:hover{
-    background: var(--color-pry);
+    background: var(--color-secondary-varient);
     color: var(--color-white);
 }

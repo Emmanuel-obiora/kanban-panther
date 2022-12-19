@@ -96,7 +96,7 @@ const Navbar = () => {
 
     const activeClicks = document.getElementById('clicksBg');
     const activeClicks2 = document.getElementById('clicksBg2');
-    // const activeClicks3 = document.querySelector('.clicks-bg');
+    const activeClicks3 = document.getElementById('clicksBg3');
 
     function onPlatformLaunch(){
         const clicks = document.getElementById('clicks');
@@ -104,6 +104,7 @@ const Navbar = () => {
         clicks.innerHTML = "Platform Launch";
         activeClicks.classList.add('active-clicks');
         activeClicks2.classList.remove('active-clicks');
+        activeClicks3.classList.remove('active-clicks');
     }
     function onMarketPlan(){
         const clicks = document.getElementById('clicks');
@@ -111,7 +112,16 @@ const Navbar = () => {
         clicks.innerHTML = "Marketing Plan";
         activeClicks.classList.remove('active-clicks');
         activeClicks2.classList.add('active-clicks');
+        activeClicks3.classList.remove('active-clicks');
     }
+    function onRoadMap(){
+        const clicks = document.getElementById('clicks');
+
+        clicks.innerHTML = "Road Map";
+        activeClicks.classList.remove('active-clicks');
+        activeClicks2.classList.remove('active-clicks');
+        activeClicks3.classList.add('active-clicks');
+    }    
 
   return (
         <div>
@@ -126,6 +136,10 @@ const Navbar = () => {
                     <li className="clicks-tru" id='clicksBg2' onClick={onMarketPlan}>
                         <VscTerminalTmux className='list-item'/>
                         <strong className='list-btn' type="button">Marketing Plan</strong>
+                    </li>
+                    <li className="clicks-tru" id='clicksBg3' onClick={onRoadMap}>
+                        <VscTerminalTmux className='list-item'/>
+                        <strong className='list-btn' type="button">Road Map</strong>
                     </li>
                 </ul>
                 <div className="createBtn" onClick={openBoard}>
