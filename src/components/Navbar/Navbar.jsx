@@ -114,7 +114,7 @@ const Navbar = () => {
         activeClicks2.classList.add('active-clicks');
         activeClicks3.classList.remove('active-clicks');
     }
-    function onRoadMap(){
+    const OnRoadMap = () =>{
         const clicks = document.getElementById('clicks');
 
         clicks.innerHTML = "Road Map";
@@ -137,7 +137,7 @@ const Navbar = () => {
                         <VscTerminalTmux className='list-item'/>
                         <strong className='list-btn' type="button">Marketing Plan</strong>
                     </li>
-                    <li className="clicks-tru" id='clicksBg3' onClick={onRoadMap}>
+                    <li className="clicks-tru" id='clicksBg3' onClick={OnRoadMap}>
                         <VscTerminalTmux className='list-item'/>
                         <strong className='list-btn' type="button">Road Map</strong>
                     </li>

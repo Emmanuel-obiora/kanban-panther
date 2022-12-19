@@ -47,7 +47,7 @@
 
 .hide-side{
     position: absolute;
-    top: 28rem;
+    top: 28.5rem;
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -132,7 +132,7 @@
         border: 1px solid var(--color-night);
         z-index: 5;
         border-radius: 8px;
-        height: 55vh;
+        height: max-content;
     }
 
     .createBtn{
@@ -147,8 +147,10 @@
     .slide-container{
         width: 80%;
         margin-left: 10%;
-        margin-top: 15rem;
-        top: 0;
+        bottom: 0;
+        max-height: max-content;
+        top: -1rem;
+        position: relative;
     }
 
     .show-resized-nav{
