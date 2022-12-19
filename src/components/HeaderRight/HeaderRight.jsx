@@ -19,7 +19,7 @@ const HeaderRight = () => {
         <div className='App'>
             <div className="header-right" id='Header2'>
                 <div className="left-side" id="leftSide">
-                    <h2>Platform Launch</h2>
+                    <h2><span id='clicks'>Platform Launch</span></h2>
                     <div className="clickables">
                         <button type='button' onClick={addNewTask}>+AddNewTask</button>
                         <div className='small-add-new' onClick={addNewTask}>

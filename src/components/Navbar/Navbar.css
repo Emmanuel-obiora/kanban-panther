@@ -85,7 +85,7 @@
     align-items: center;
     cursor: pointer;
 }
-.board-list > li:hover{
+.clicks-tru:hover{
     background: var(--color-pry-varient);
     color: var(--color-secondary);
 }
@@ -154,4 +154,15 @@
     .show-resized-nav{
         visibility: visible;
     }
+}
+
+/* ======on click for active buttons====== */
+.active-clicks{
+    background: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.active-clicks:hover{
+    background: var(--color-pry);
+    color: var(--color-white);
 }

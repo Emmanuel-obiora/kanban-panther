@@ -13,8 +13,8 @@
 :root{
   --tw-bg-opacity: 1;
   --color-pry: rgb(244 247 253 / var(--tw-bg-opacity));
-  --color-pry-varient: #E9EFFA;
-  --color-secondary: #635fc7;
+  --color-pry-varient: #e9effa;
+  --color-secondary: rgb(99, 95, 199);
   --color-secondary-varient: #aba9fd;
   --color-white: rgb(255, 255, 255);
   --color-green: rgb(6, 201, 159);
